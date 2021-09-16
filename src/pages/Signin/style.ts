@@ -11,19 +11,14 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-
   align-items: center;
-  place-content: center;
-
+  justify-content: center;
   width: 100%;
   max-width: 700px;
 
   form {
-    margin: 80px 0;
+    margin: 80px 0px;
     width: 340px;
-
-    display: flex;
-    flex-direction: column;
     text-align: center;
 
     h1 {
@@ -32,10 +27,10 @@ export const Content = styled.div`
 
     a {
       color: #f4edd8;
-      display: block;
       margin-top: 24px;
+      display: block;
       text-decoration: none;
-      transition: color 0.2s;
+      transition: all color 0.2s ease-out;
 
       &:hover {
         color: ${(shade(0.2), '#f4edd8')};
@@ -43,13 +38,12 @@ export const Content = styled.div`
     }
   }
 
-  .create-acount {
-    color: #ff9000;
+  > a {
+    color: #f4edd8;
     margin-top: 24px;
     display: block;
     text-decoration: none;
-    transition: color 0.2s;
-
+    transition: all 0.2s ease-out;
     display: flex;
     align-items: center;
 
@@ -58,7 +52,11 @@ export const Content = styled.div`
     }
 
     &:hover {
-      color: ${(shade(0.2), '#ff9000')};
+      color: ${(shade(0.2), '#f4ede8')};
+    }
+
+    svg {
+      margin-left: 16px;
     }
   }
 `;
