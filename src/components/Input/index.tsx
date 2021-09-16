@@ -8,11 +8,12 @@ import { Container } from './style';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
+  // eslint-disable-next-line react/require-default-props
   icon?: React.ComponentType<IconBaseProps>;
 }
 
 const Input: React.FC<InputProps> = ({ name, icon: Icon, ...rest }) => {
-  const inputRef = useRef(null);
+  const inputRef = useRef<HTMLInputElement>(null);
   const { fieldName, registerField, defaultValue } = useField(name);
   // eslint-disable-next-line no-unused-vars
   const [isFocused, setIsFocused] = useState(false);
