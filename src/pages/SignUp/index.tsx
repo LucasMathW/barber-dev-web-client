@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable react/jsx-no-bind */
 import React from 'react';
 // eslint-disable-next-line prettier/prettier
 import {
@@ -14,7 +17,7 @@ import Input from '../../components/Input';
 const SignUp: React.FC = () => {
   // eslint-disable-next-line @typescript-eslint/ban-types
   function handleSubmit(data: object): void {
-    console.log('DATA:', data);
+    // console.log('DATA:', data);
   }
 
   return (
@@ -25,11 +28,11 @@ const SignUp: React.FC = () => {
 
         <Form onSubmit={handleSubmit}>
           <h1>Faça seu cadastro</h1>
-          <Input icon={FiUser} name="name" placeholder="nome" />
-          <Input icon={FiMail} name="email" placeholder="E-mail" />
+          <Input name="name" icon={FiUser} placeholder="nome" />
+          <Input name="email" icon={FiMail} placeholder="E-mail" />
           <Input
-            icon={FiLock}
             name="password"
+            icon={FiLock}
             placeholder="Senha"
             type="password"
           />
