@@ -9,39 +9,37 @@ export const Container = styled.div<containerProps>`
   border-radius: 10px;
   border: 2px solid #232129;
   padding: 16px;
-  width: 304px;
-
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex: 1;
+  color: #666360;
 
   & + div {
-    margin-top: 16px;
+    margin-top: 8px;
   }
 
-  ${(props) => props.isFocused &&
+  ${(props) =>
+    // eslint-disable-next-line implicit-arrow-linebreak
+    props.isFocused &&
     css`
       color: #ff9000;
       border-color: #ff9000;
     `}
 
   input {
-    flex: 1;
-    border: 0;
     background: transparent;
-    color: #f4edd8;
+    border: 0;
+    color: #f4ede8;
+    flex: 1;
+    width: 100%;
 
     &::placeholder {
       color: #666350;
-    }
-
-    & + input {
-      margin-top: 8px;
     }
   }
 
   svg {
     margin-right: 16px;
-    color: #666350;
   }
 `;
