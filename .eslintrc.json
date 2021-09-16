@@ -33,6 +33,9 @@
         "react/jsx-props-no-spreading": "off",
         "react/prop-types": "off",
         "camelcase":"off",
+        "operator-linebreak": "off",
+        // "implicit-arrow-linebreak":["error", "beside"],
+        // "arrow-body-style": ["error", "always"],
         "import/extensions":[
             "error",
             "ignorePackages",
